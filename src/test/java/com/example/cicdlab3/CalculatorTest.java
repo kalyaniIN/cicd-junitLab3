@@ -42,6 +42,11 @@ class CalculatorTest {
         assertEquals(2.0, calculator.squareRootOf(4), 0.01);
         assertEquals(Double.NaN, calculator.squareRootOf(-1), 0.01);
     }
+    @Test
+    public void testSquareRootOf2() {
+        var calculator = new Calculator();
+        assertTrue(Double.isNaN(calculator.squareRootOf(-1)));
+    }
 
 
 
