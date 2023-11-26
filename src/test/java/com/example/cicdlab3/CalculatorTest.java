@@ -30,6 +30,13 @@ class CalculatorTest {
         assertEquals(2.5, calculator.divide(5, 2), 0.01);
         assertEquals(Double.POSITIVE_INFINITY, calculator.divide(5, 0), 0.01);
     }
+    @Test
+    public void testDivide2() {
+        var calculator = new Calculator();
+        assertTrue(Double.isInfinite(calculator.divide(5, 0)));
+        assertFalse(Double.isNaN(calculator.divide(5, 3)));
+    }
+
 
 
 }
