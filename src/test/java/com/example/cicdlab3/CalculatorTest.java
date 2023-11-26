@@ -36,6 +36,13 @@ class CalculatorTest {
         assertTrue(Double.isInfinite(calculator.divide(5, 0)));
         assertFalse(Double.isNaN(calculator.divide(5, 3)));
     }
+    @Test
+    public void testSquareRootOf1() {
+        var calculator = new Calculator();
+        assertEquals(2.0, calculator.squareRootOf(4), 0.01);
+        assertEquals(Double.NaN, calculator.squareRootOf(-1), 0.01);
+    }
+
 
 
 
