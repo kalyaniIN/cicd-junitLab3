@@ -8,7 +8,7 @@ class CalculatorTest {
     @Test
     void testAdd () {
         var calculator = new Calculator();
-        assertEquals(4, calculator.add(2, 2));
+        assertEquals(5, calculator.add(2, 2));
         assertEquals(-1, calculator.add(2, -3));
     }
 
