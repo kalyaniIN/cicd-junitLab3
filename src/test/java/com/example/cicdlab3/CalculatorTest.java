@@ -18,5 +18,12 @@ class CalculatorTest {
         assertEquals(1, calculator.subtract(4, 3));
         assertEquals(5, calculator.subtract(2, -3));
     }
+    @Test
+    public void testMultiply() {
+        var calculator = new Calculator();
+        assertEquals(6, calculator.multiply(2, 3));
+        assertEquals(-6, calculator.multiply(2, -3));
+    }
+
 
 }
