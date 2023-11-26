@@ -24,6 +24,12 @@ class CalculatorTest {
         assertEquals(6, calculator.multiply(2, 3));
         assertEquals(-6, calculator.multiply(2, -3));
     }
+    @Test
+    public void testDivide1() {
+        var calculator = new Calculator();
+        assertEquals(2.5, calculator.divide(5, 2), 0.01);
+        assertEquals(Double.POSITIVE_INFINITY, calculator.divide(5, 0), 0.01);
+    }
 
 
 }
